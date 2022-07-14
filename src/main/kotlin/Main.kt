@@ -7,13 +7,20 @@ fun main(args: Array<String>){
             "*Suas informações* \n" +
             "Idade: $idade anos");
 
-    //Printando a função max com parâmetros e colocando valores.
+    //Printando a função max(corpo de bloco) com parâmetros e colocando valores.
     max(a = 4, b= 5);
 
     //Printando a função soma sem parâmetro.
     println(soma());
+
+    //Printando a função min(corpo de expressão).
+    println(min(a = 8, b = 5));
+
+    //Printando a função testeSomar com parâmetros do tipo Double.
+    println(testeSomar(4.5, 5.8));
 }
 
+//Corpo de bloco
 fun max(a: Int, b: Int): Any {
     return if(a > b){
      println("O primeiro numº digitado é o maior: $a");
@@ -22,6 +29,9 @@ fun max(a: Int, b: Int): Any {
     }
 }
 
+//Corpo de expressão
+fun min(a: Int, b: Int) = if(a < b) a else b;
+
 fun soma(): Int {
     val num1 = 5;
     val num2 = 10;
@@ -29,3 +39,10 @@ fun soma(): Int {
 
     return resultado;
 }
+
+fun testeSomar(a: Double, b: Double): Double{
+    val resultado = a + b;
+    return resultado;
+}
+
+
