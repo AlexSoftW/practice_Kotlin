@@ -8,7 +8,7 @@ fun main(args: Array<String>){
             "Idade: $idade anos");
 
     //Printando a função max com parâmetros e colocando valores.
-    println(max(a = 4, b = 2));
+    max(a = 4, b= 5);
 
     //Printando a função soma sem parâmetro.
     println(soma());
