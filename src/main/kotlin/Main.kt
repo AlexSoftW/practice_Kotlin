@@ -20,7 +20,7 @@ fun main(args: Array<String>){
     println(testeSomar(4.5, 5.8));
 }
 
-//Corpo de bloco
+//Corpo de bloco (tudo dentro de {}).
 fun max(a: Int, b: Int): Any {
     return if(a > b){
      println("O primeiro numº digitado é o maior: $a");
@@ -41,8 +41,8 @@ fun soma(): Int {
 }
 
 fun testeSomar(a: Double, b: Double): Double{
-    val resultado = a + b;
-    return resultado;
+     val resultado = a + b;
+     return resultado;
 }
 
 
